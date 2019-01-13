@@ -6,14 +6,14 @@
 Welcome to Zane API's documentation!
 ====================================
 
+Zane API is a ram-eating, meme-loving, image-manipulating, API.
+
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 3
+   
+   api
 
-
-
-Indices and tables
-==================
+If you are unable to find what you are looking for, use the following pages.
 
 * :ref:`genindex`
 * :ref:`search`
