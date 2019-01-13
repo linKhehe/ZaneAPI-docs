@@ -10,27 +10,29 @@ The following documentation defines all of the usable routes in the Zane API.
 Information Routes
 ------------------
 
-.. http:get:: /status
+This section outlines all of the routes used as information for the API.
 
-  This returns the API's current status.
+  .. http:get:: /status
 
-  **Example Request**:
+    This returns the API's current status.
 
-  .. sourcecode:: http
+    **Example Request**:
 
-    GET /status HTTP
+    .. sourcecode:: http
 
-  **Example response**:
+      GET /status HTTP
 
-  .. sourcecode:: http
+    **Example response**:
 
-    HTTP 200 OK
-    Content-Type: application/json
+    .. sourcecode:: http
 
-    {
-      'code': 200
-      'message': 'The API is functioning okay.'
-    }
+      HTTP 200 OK
+      Content-Type: application/json
 
-  :statuscode 200: The api is functioning correctly
-  :statuscode 404: The API functionality is currently disabled.
+      {
+       'code': 200
+       'message': 'The API is functioning okay.'
+      }
+
+   :statuscode 200: The api is functioning correctly
+   :statuscode 404: The API functionality is currently disabled.
