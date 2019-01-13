@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>API Refrence &#8212; Zane API  documentation</title>
+    <title>HTTP Routing Table &#8212; Zane API  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -15,10 +15,17 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+
+    <script type="text/javascript">
+      DOCUMENTATION_OPTIONS.COLLAPSE_INDEX = true;
+    </script>
+
 
   </head><body>
   
@@ -28,52 +35,23 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="api-refrence">
-<h1>API Refrence<a class="headerlink" href="#api-refrence" title="Permalink to this headline">¶</a></h1>
-<p>The following documentation defines all of the usable routes in the Zane API.</p>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">All routes use the base url of /api/v0/</p>
-</div>
-<div class="section" id="information-routes">
-<h2>Information Routes<a class="headerlink" href="#information-routes" title="Permalink to this headline">¶</a></h2>
-<p>This section outlines all of the routes used as information for the API.</p>
-<dl class="get">
-<dt id="get--status">
-<code class="descname">GET </code><code class="descname">/status</code><a class="headerlink" href="#get--status" title="Permalink to this definition">¶</a></dt>
-<dd><blockquote>
-<div><p>This returns the API’s current status.</p>
-<p><strong>Example Request</strong>:</p>
-<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>GET /status HTTP
-</pre></div>
-</div>
-<p><strong>Example response</strong>:</p>
-<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
-Content-Type: application/json
 
-{
- &#39;code&#39;: 200
- &#39;message&#39;: &#39;The API is functioning okay.&#39;
-}
-</pre></div>
-</div>
-</div></blockquote>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
-<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – The api is functioning correctly</li>
-<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">404 Not Found</a> – The API functionality is currently disabled.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
+   <h1>HTTP Routing Table</h1>
 
-</div>
-</div>
+   <div class="modindex-jumpbox">
+   <a href="#cap-/status"><strong>/status</strong></a>
+   </div>
+
+   <table class="indextable modindextable">
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-/status"><td></td><td>
+       <strong>/status</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--status"><code class="xref">GET /status</code></a></td><td>
+       <em></em></td></tr>
+   </table>
 
 
           </div>
@@ -122,9 +100,6 @@ Content-Type: application/json
       Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.9</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
       
-      |
-      <a href="_sources/api.rst.txt"
-          rel="nofollow">Page source</a>
     </div>
 
     
