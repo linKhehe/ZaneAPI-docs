@@ -12,27 +12,27 @@ Information Routes
 
 This section outlines all of the routes used as information for the API.
 
-  .. http:get:: /status
+.. http:get:: /status
 
-    This returns the API's current status.
+  This returns the API's current status.
 
-    **Example Request**:
+  **Example Request**:
 
-    .. sourcecode:: http
+  .. sourcecode:: http
 
-      GET /status HTTP
+    GET /status HTTP
 
-    **Example response**:
+  **Example response**:
 
-    .. sourcecode:: http
+  .. sourcecode:: http
 
-      HTTP 200 OK
-      Content-Type: application/json
+    HTTP 200 OK
+    Content-Type: application/json
 
-      {
-       'code': 200
-       'message': 'The API is functioning okay.'
-      }
+    {
+     'code': 200
+     'message': 'The API is functioning okay.'
+    }
 
-   :statuscode 200: The api is functioning correctly
-   :statuscode 404: The API functionality is currently disabled.
+ :statuscode 200: The api is functioning correctly
+ :statuscode 404: The API functionality is currently disabled.
