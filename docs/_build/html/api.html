@@ -73,6 +73,46 @@ Content-Type: application/json
 </dd></dl>
 
 </div>
+<div class="section" id="image-manipulation">
+<h2>Image Manipulation<a class="headerlink" href="#image-manipulation" title="Permalink to this headline">¶</a></h2>
+<p>This section outlines all of the routs used for image manipulation.</p>
+<dl class="post">
+<dt id="post--invert">
+<code class="descname">POST </code><code class="descname">/invert</code><a class="headerlink" href="#post--invert" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>This returns an inverted version if the input image.
+If the image is larger than 512px in width or height,
+the image will be sampled down to that size while
+preserving aspect ratio.</p>
+<p><strong>Example Request</strong>:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>POST /invert HTTP
+Accept: image/jpeg, image/png
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+Content-Type: image/png
+
+(image as bytes)
+</pre></div>
+</div>
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – Image manipulation is functioning correctly and has completed.</li>
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">404 Not Found</a> – The API functionality is currently disabled.</li>
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.1">500 Internal Server Error</a> – The current endpoint is currently broken due to internal errors.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
 </div>
 
 
