@@ -12,6 +12,7 @@ Zane API is a ram-eating, meme-loving, image-manipulating, API.
    :maxdepth: 3
    
    api
+   examples
 
 If you are unable to find what you are looking for, use the following pages.
 
