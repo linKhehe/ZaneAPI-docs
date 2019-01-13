@@ -41,8 +41,7 @@
 <dl class="get">
 <dt id="get--status">
 <code class="descname">GET </code><code class="descname">/status</code><a class="headerlink" href="#get--status" title="Permalink to this definition">¶</a></dt>
-<dd><blockquote>
-<div><p>This returns the API’s current status.</p>
+<dd><p>This returns the API’s current status.</p>
 <p><strong>Example Request</strong>:</p>
 <div class="highlight-http notranslate"><div class="highlight"><pre><span></span>GET /status HTTP
 </pre></div>
@@ -52,12 +51,11 @@
 Content-Type: application/json
 
 {
- &#39;code&#39;: 200
- &#39;message&#39;: &#39;The API is functioning okay.&#39;
+    &#39;code&#39;: 200
+    &#39;message&#39;: &#39;The API is functioning okay.&#39;
 }
 </pre></div>
 </div>
-</div></blockquote>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -79,11 +77,10 @@ Content-Type: application/json
 <dl class="post">
 <dt id="post--invert">
 <code class="descname">POST </code><code class="descname">/invert</code><a class="headerlink" href="#post--invert" title="Permalink to this definition">¶</a></dt>
-<dd><blockquote>
-<div><p>This returns an inverted version if the input image.
+<dd><p>This returns an inverted version of the input image.
 If the image is larger than 512px in width or height,
-the image will be sampled down to that size while
-preserving aspect ratio.</p>
+the image will be sampled down to that 512px in the
+offending direction while preserving aspect ratio.</p>
 <p><strong>Example Request</strong>:</p>
 <div class="highlight-http notranslate"><div class="highlight"><pre><span></span>POST /invert HTTP
 Accept: image/jpeg, image/png
@@ -96,7 +93,178 @@ Content-Type: image/png
 (image as bytes)
 </pre></div>
 </div>
-</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – Image manipulation is functioning correctly and has completed.</li>
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">404 Not Found</a> – The API functionality is currently disabled.</li>
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.1">500 Internal Server Error</a> – The current endpoint is currently broken due to internal errors.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--magic">
+<code class="descname">POST </code><code class="descname">/magic</code><a class="headerlink" href="#post--magic" title="Permalink to this definition">¶</a></dt>
+<dd><p>This returns a content aware scaled version of the input image.
+If the image is larger than 512px in width or height,
+the image will be sampled down to that 512px in the
+offending direction while preserving aspect ratio.</p>
+<p><strong>Example Request</strong>:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>POST /magic HTTP
+Accept: image/jpeg, image/png
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+Content-Type: image/png
+
+(image as bytes)
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – Image manipulation is functioning correctly and has completed.</li>
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">404 Not Found</a> – The API functionality is currently disabled.</li>
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.1">500 Internal Server Error</a> – The current endpoint is currently broken due to internal errors.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--deepfry">
+<code class="descname">POST </code><code class="descname">/deepfry</code><a class="headerlink" href="#post--deepfry" title="Permalink to this definition">¶</a></dt>
+<dd><p>This returns a deepfried version of the input image.
+If the image is larger than 512px in width or height,
+the image will be sampled down to that 512px in the
+offending direction while preserving aspect ratio.</p>
+<p><strong>Example Request</strong>:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>POST /deepfry HTTP
+Accept: image/jpeg, image/png
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+Content-Type: image/png
+
+(image as bytes)
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – Image manipulation is functioning correctly and has completed.</li>
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">404 Not Found</a> – The API functionality is currently disabled.</li>
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.1">500 Internal Server Error</a> – The current endpoint is currently broken due to internal errors.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--desat">
+<code class="descname">POST </code><code class="descname">/desat</code><a class="headerlink" href="#post--desat" title="Permalink to this definition">¶</a></dt>
+<dd><p>This returns a desaturated version of the input image.
+If the image is larger than 512px in width or height,
+the image will be sampled down to that 512px in the
+offending direction while preserving aspect ratio.</p>
+<p><strong>Example Request</strong>:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>POST /desat HTTP
+Accept: image/jpeg, image/png
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+Content-Type: image/png
+
+(image as bytes)
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – Image manipulation is functioning correctly and has completed.</li>
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">404 Not Found</a> – The API functionality is currently disabled.</li>
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.1">500 Internal Server Error</a> – The current endpoint is currently broken due to internal errors.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--noise">
+<code class="descname">POST </code><code class="descname">/noise</code><a class="headerlink" href="#post--noise" title="Permalink to this definition">¶</a></dt>
+<dd><p>This returns a noisy version of the input image.
+If the image is larger than 512px in width or height,
+the image will be sampled down to that 512px in the
+offending direction while preserving aspect ratio.</p>
+<p><strong>Example Request</strong>:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>POST /noise HTTP
+Accept: image/jpeg, image/png
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+Content-Type: image/png
+
+(image as bytes)
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – Image manipulation is functioning correctly and has completed.</li>
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">404 Not Found</a> – The API functionality is currently disabled.</li>
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.1">500 Internal Server Error</a> – The current endpoint is currently broken due to internal errors.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--color">
+<code class="descname">POST </code><code class="descname">/color</code><a class="headerlink" href="#post--color" title="Permalink to this definition">¶</a></dt>
+<dd><p>This returns a differently colored version of the input image.
+If the image is larger than 512px in width or height,
+the image will be sampled down to that 512px in the
+offending direction while preserving aspect ratio.</p>
+<p>The color arg is parsed by wand.color.Color and can use
+any of the listed formats on <a class="reference external" href="https://imagemagick.org/script/color.php">this page</a>.</p>
+<p><strong>Example Request</strong>:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>POST /color?color=blue HTTP
+Accept: image/jpeg, image/png
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+Content-Type: image/png
+
+(image as bytes)
+</pre></div>
+</div>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
