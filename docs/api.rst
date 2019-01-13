@@ -36,3 +36,35 @@ This section outlines all of the routes used as information for the API.
 
  :statuscode 200: The api is functioning correctly
  :statuscode 404: The API functionality is currently disabled.
+
+Image Manipulation
+------------------
+
+This section outlines all of the routs used for image manipulation.
+
+.. http:post:: /invert
+
+  This returns an inverted version if the input image.
+  If the image is larger than 512px in width or height,
+  the image will be sampled down to that size while
+  preserving aspect ratio.
+
+  **Example Request**:
+
+  .. sourcecode:: http
+
+    POST /invert HTTP
+    Accept: image/jpeg, image/png
+
+  **Example response**:
+
+  .. sourcecode:: http
+
+    HTTP 200 OK
+    Content-Type: image/png
+    
+    (image as bytes)
+
+ :statuscode 200: Image manipulation is functioning correctly and has completed.
+ :statuscode 404: The API functionality is currently disabled.
+ :statuscode 500: The current endpoint is currently broken due to internal errors.
