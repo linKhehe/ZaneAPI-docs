@@ -45,11 +45,11 @@
 <code class="descname">GET </code><code class="descname">/status</code><a class="headerlink" href="#get--status" title="Permalink to this definition">¶</a></dt>
 <dd><p>This returns the API’s current status.</p>
 <p><strong>Example Request</strong>:</p>
-<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>GET /status HTTP
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>GET /status HTTP
 </pre></div>
 </div>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
 Content-Type: application/json
 
 {
@@ -84,12 +84,12 @@ If the image is larger than 512px in width or height,
 the image will be sampled down to that 512px in the
 offending direction while preserving aspect ratio.</p>
 <p><strong>Example Request</strong>:</p>
-<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>POST /invert HTTP
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>POST /invert HTTP
 Accept: image/jpeg, image/png
 </pre></div>
 </div>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
 Content-Type: image/png
 
 (image as bytes)
@@ -118,12 +118,12 @@ If the image is larger than 512px in width or height,
 the image will be sampled down to that 512px in the
 offending direction while preserving aspect ratio.</p>
 <p><strong>Example Request</strong>:</p>
-<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>POST /magic HTTP
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>POST /magic HTTP
 Accept: image/jpeg, image/png
 </pre></div>
 </div>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
 Content-Type: image/png
 
 (image as bytes)
@@ -152,12 +152,12 @@ If the image is larger than 512px in width or height,
 the image will be sampled down to that 512px in the
 offending direction while preserving aspect ratio.</p>
 <p><strong>Example Request</strong>:</p>
-<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>POST /deepfry HTTP
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>POST /deepfry HTTP
 Accept: image/jpeg, image/png
 </pre></div>
 </div>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
 Content-Type: image/png
 
 (image as bytes)
@@ -186,12 +186,12 @@ If the image is larger than 512px in width or height,
 the image will be sampled down to that 512px in the
 offending direction while preserving aspect ratio.</p>
 <p><strong>Example Request</strong>:</p>
-<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>POST /desat HTTP
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>POST /desat HTTP
 Accept: image/jpeg, image/png
 </pre></div>
 </div>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
 Content-Type: image/png
 
 (image as bytes)
@@ -220,12 +220,12 @@ If the image is larger than 512px in width or height,
 the image will be sampled down to that 512px in the
 offending direction while preserving aspect ratio.</p>
 <p><strong>Example Request</strong>:</p>
-<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>POST /noise HTTP
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>POST /noise HTTP
 Accept: image/jpeg, image/png
 </pre></div>
 </div>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
 Content-Type: image/png
 
 (image as bytes)
@@ -256,12 +256,12 @@ offending direction while preserving aspect ratio.</p>
 <p>The color arg is parsed by wand.color.Color and can use
 any of the listed formats on <a class="reference external" href="https://imagemagick.org/script/color.php">this page</a>.</p>
 <p><strong>Example Request</strong>:</p>
-<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>POST /color?color=blue HTTP
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>POST /color?color=blue HTTP
 Accept: image/jpeg, image/png
 </pre></div>
 </div>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-http notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
 Content-Type: image/png
 
 (image as bytes)
