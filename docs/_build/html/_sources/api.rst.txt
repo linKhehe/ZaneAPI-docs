@@ -40,7 +40,7 @@ This section outlines all of the routes used as information for the API.
 Image Manipulation
 ------------------
 
-This section outlines all of the routs used for image manipulation.
+This section outlines all of the routes used for image manipulation.
 
 
 .. http:post:: /invert
