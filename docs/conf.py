@@ -150,6 +150,23 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'ZaneAPI', 'Zane API Documentation',
-     author, 'ZaneAPI', 'One line description of project.',
-     'Miscellaneous'),
+     author, 'ZaneAPI', 'The documentation for the Zane API.',
+     'API'),
 ]
+
+
+# -- Theme Configuration -----------------------------------------------------
+
+import guzzle_sphinx_theme
+
+html_theme_path = guzzle_sphinx_theme.html_theme_path()
+html_theme = 'guzzle_sphinx_theme'
+
+# Register the theme as an extension to generate a sitemap.xml
+extensions.append("guzzle_sphinx_theme")
+
+# Guzzle theme options (see theme.conf for more information)
+html_theme_options = {
+    # Set the name of the project to appear in the sidebar
+    "project_nav_name": "Zane API",
+}
