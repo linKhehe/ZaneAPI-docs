@@ -18,13 +18,13 @@ This section outlines all of the routes used as information for the API.
 
     **Example Request**:
 
-    .. code-block:: html
+    .. code-block:: rest
 
         GET /status HTTP
 
     **Example response**:
 
-    .. code-block:: html
+    .. code-block:: rest
 
         HTTP 200 OK
         Content-Type: application/json
@@ -52,14 +52,14 @@ This section outlines all of the routes used for image manipulation.
 
     **Example Request**:
 
-    .. code-block:: html
+    .. code-block:: rest
 
         POST /invert HTTP
         Accept: image/jpeg, image/png
 
     **Example response**:
 
-    .. code-block:: html
+    .. code-block:: rest
 
         HTTP 200 OK
         Content-Type: image/png
@@ -80,14 +80,14 @@ This section outlines all of the routes used for image manipulation.
 
     **Example Request**:
 
-    .. code-block:: html
+    .. code-block:: rest
 
         POST /magic HTTP
         Accept: image/jpeg, image/png
 
     **Example response**:
 
-    .. code-block:: html
+    .. code-block:: rest
 
         HTTP 200 OK
         Content-Type: image/png
@@ -108,14 +108,14 @@ This section outlines all of the routes used for image manipulation.
 
     **Example Request**:
 
-    .. code-block:: html
+    .. code-block:: rest
 
         POST /deepfry HTTP
         Accept: image/jpeg, image/png
 
     **Example response**:
 
-    .. code-block:: html
+    .. code-block:: rest
 
         HTTP 200 OK
         Content-Type: image/png
@@ -136,14 +136,14 @@ This section outlines all of the routes used for image manipulation.
 
     **Example Request**:
 
-    .. code-block:: html
+    .. code-block:: rest
 
         POST /desat HTTP
         Accept: image/jpeg, image/png
 
     **Example response**:
 
-    .. code-block:: html
+    .. code-block:: rest
 
         HTTP 200 OK
         Content-Type: image/png
@@ -164,14 +164,14 @@ This section outlines all of the routes used for image manipulation.
 
     **Example Request**:
 
-    .. code-block:: html
+    .. code-block:: rest
 
         POST /noise HTTP
         Accept: image/jpeg, image/png
 
     **Example response**:
 
-    .. code-block:: html
+    .. code-block:: rest
 
         HTTP 200 OK
         Content-Type: image/png
@@ -197,14 +197,14 @@ This section outlines all of the routes used for image manipulation.
 
     **Example Request**:
 
-    .. code-block:: html
+    .. code-block:: rest
 
         POST /color?color=blue HTTP
         Accept: image/jpeg, image/png
 
     **Example response**:
 
-    .. code-block:: html
+    .. code-block:: rest
 
         HTTP 200 OK
         Content-Type: image/png
