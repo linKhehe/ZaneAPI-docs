@@ -14,7 +14,9 @@ This section outlines all of the routes used as information for the API.
 
 .. http:get:: /status
 
-    This returns the API's current status.
+    This returns the API's current status in json.
+    It returns a status code and a message.
+    The information will rarely change.
 
     **Example Request**:
 
@@ -47,7 +49,7 @@ This section outlines all of the routes used for image manipulation.
 
     This returns an inverted version of the input image.
     If the image is larger than 512px in width or height,
-    the image will be sampled down to that 512px in the
+    the image will be sampled down to 512px in the
     offending direction while preserving aspect ratio.
 
     **Example Request**:
@@ -75,7 +77,7 @@ This section outlines all of the routes used for image manipulation.
 
     This returns a content aware scaled version of the input image.
     If the image is larger than 512px in width or height,
-    the image will be sampled down to that 512px in the
+    the image will be sampled down to 512px in the
     offending direction while preserving aspect ratio.
 
     **Example Request**:
@@ -103,7 +105,7 @@ This section outlines all of the routes used for image manipulation.
 
     This returns a deepfried version of the input image.
     If the image is larger than 512px in width or height,
-    the image will be sampled down to that 512px in the
+    the image will be sampled down to 512px in the
     offending direction while preserving aspect ratio.
 
     **Example Request**:
@@ -131,7 +133,7 @@ This section outlines all of the routes used for image manipulation.
 
     This returns a desaturated version of the input image.
     If the image is larger than 512px in width or height,
-    the image will be sampled down to that 512px in the
+    the image will be sampled down to 512px in the
     offending direction while preserving aspect ratio.
 
     **Example Request**:
@@ -159,7 +161,7 @@ This section outlines all of the routes used for image manipulation.
 
     This returns a noisy version of the input image.
     If the image is larger than 512px in width or height,
-    the image will be sampled down to that 512px in the
+    the image will be sampled down to 512px in the
     offending direction while preserving aspect ratio.
 
     **Example Request**:
@@ -187,7 +189,7 @@ This section outlines all of the routes used for image manipulation.
 
     This returns a differently colored version of the input image.
     If the image is larger than 512px in width or height,
-    the image will be sampled down to that 512px in the
+    the image will be sampled down to 512px in the
     offending direction while preserving aspect ratio.
 
     The color arg is parsed by wand.color.Color and can use
