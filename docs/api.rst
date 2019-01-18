@@ -216,3 +216,339 @@ This section outlines all of the routes used for image manipulation.
     :statuscode 200: Image manipulation is functioning correctly and has completed.
     :statuscode 404: The API functionality is currently disabled.
     :statuscode 500: The current endpoint is currently broken due to internal errors.
+
+
+.. http:post:: /sat
+
+    This returns a saturated version of the input image.
+    If the image is larger than 512px in width or height,
+    the image will be sampled down to 512px in the
+    offending direction while preserving aspect ratio.
+
+    **Example Request**:
+
+    .. code-block:: rest
+
+        POST /sat HTTP
+        Accept: image/jpeg, image/png
+
+    **Example response**:
+
+    .. code-block:: rest
+
+        HTTP 200 OK
+        Content-Type: image/png
+
+        (image as bytes)
+
+    :statuscode 200: Image manipulation is functioning correctly and has completed.
+    :statuscode 404: The API functionality is currently disabled.
+    :statuscode 500: The current endpoint is currently broken due to internal errors.
+
+
+.. http:post:: /arc
+
+    This returns a 360 degree projection of the input image.
+    If the image is larger than 512px in width or height,
+    the image will be sampled down to 512px in the
+    offending direction while preserving aspect ratio.
+
+    **Example Request**:
+
+    .. code-block:: rest
+
+        POST /arc HTTP
+        Accept: image/jpeg, image/png
+
+    **Example response**:
+
+    .. code-block:: rest
+
+        HTTP 200 OK
+        Content-Type: image/png
+
+        (image as bytes)
+
+    :statuscode 200: Image manipulation is functioning correctly and has completed.
+    :statuscode 404: The API functionality is currently disabled.
+    :statuscode 500: The current endpoint is currently broken due to internal errors.
+
+
+.. http:post:: /concave
+
+    This returns a concave version of the input image.
+    If the image is larger than 512px in width or height,
+    the image will be sampled down to 512px in the
+    offending direction while preserving aspect ratio.
+
+    **Example Request**:
+
+    .. code-block:: rest
+
+        POST /concave HTTP
+        Accept: image/jpeg, image/png
+
+    **Example response**:
+
+    .. code-block:: rest
+
+        HTTP 200 OK
+        Content-Type: image/png
+
+        (image as bytes)
+
+    :statuscode 200: Image manipulation is functioning correctly and has completed.
+    :statuscode 404: The API functionality is currently disabled.
+    :statuscode 500: The current endpoint is currently broken due to internal errors.
+
+
+.. http:post:: /convex
+
+    This returns a convex version of the input image.
+    If the image is larger than 512px in width or height,
+    the image will be sampled down to 512px in the
+    offending direction while preserving aspect ratio.
+
+    **Example Request**:
+
+    .. code-block:: rest
+
+        POST /convex HTTP
+        Accept: image/jpeg, image/png
+
+    **Example response**:
+
+    .. code-block:: rest
+
+        HTTP 200 OK
+        Content-Type: image/png
+
+        (image as bytes)
+
+    :statuscode 200: Image manipulation is functioning correctly and has completed.
+    :statuscode 404: The API functionality is currently disabled.
+    :statuscode 500: The current endpoint is currently broken due to internal errors.
+
+
+.. http:post:: /floor
+
+    This returns a tiled floor textured with the input image.
+    If the image is larger than 128px in width or height,
+    the image will be sampled down to 128px in the
+    offending direction while preserving aspect ratio.
+
+    **Example Request**:
+
+    .. code-block:: rest
+
+        POST /floor HTTP
+        Accept: image/jpeg, image/png
+
+    **Example response**:
+
+    .. code-block:: rest
+
+        HTTP 200 OK
+        Content-Type: image/png
+
+        (image as bytes)
+
+    :statuscode 200: Image manipulation is functioning correctly and has completed.
+    :statuscode 404: The API functionality is currently disabled.
+    :statuscode 500: The current endpoint is currently broken due to internal errors.
+
+
+.. http:post:: /blur
+
+    This returns a blurred of the input image.
+    If the image is larger than 512px in width or height,
+    the image will be sampled down to 512px in the
+    offending direction while preserving aspect ratio.
+
+    **Example Request**:
+
+    .. code-block:: rest
+
+        POST /blur HTTP
+        Accept: image/jpeg, image/png
+
+    **Example response**:
+
+    .. code-block:: rest
+
+        HTTP 200 OK
+        Content-Type: image/png
+
+        (image as bytes)
+
+    :statuscode 200: Image manipulation is functioning correctly and has completed.
+    :statuscode 404: The API functionality is currently disabled.
+    :statuscode 500: The current endpoint is currently broken due to internal errors.
+
+
+.. http:post:: /vaporwave
+
+    This returns a vaporwave version of the input image.
+    If the image is larger than 512px in width or height,
+    the image will be sampled down to 512px in the
+    offending direction while preserving aspect ratio.
+
+    **Example Request**:
+
+    .. code-block:: rest
+
+        POST /vaporwave HTTP
+        Accept: image/jpeg, image/png
+
+    **Example response**:
+
+    .. code-block:: rest
+
+        HTTP 200 OK
+        Content-Type: image/png
+
+        (image as bytes)
+
+    :statuscode 200: Image manipulation is functioning correctly and has completed.
+    :statuscode 404: The API functionality is currently disabled.
+    :statuscode 500: The current endpoint is currently broken due to internal errors.
+
+
+.. http:post:: /emboss
+
+    This returns an embossed version of the input image.
+    If the image is larger than 512px in width or height,
+    the image will be sampled down to 512px in the
+    offending direction while preserving aspect ratio.
+
+    **Example Request**:
+
+    .. code-block:: rest
+
+        POST /emboss HTTP
+        Accept: image/jpeg, image/png
+
+    **Example response**:
+
+    .. code-block:: rest
+
+        HTTP 200 OK
+        Content-Type: image/png
+
+        (image as bytes)
+
+    :statuscode 200: Image manipulation is functioning correctly and has completed.
+    :statuscode 404: The API functionality is currently disabled.
+    :statuscode 500: The current endpoint is currently broken due to internal errors.
+
+
+.. http:post:: /shade
+
+    This returns a shaded of the input image.
+    If the image is larger than 512px in width or height,
+    the image will be sampled down to 512px in the
+    offending direction while preserving aspect ratio.
+
+    **Example Request**:
+
+    .. code-block:: rest
+
+        POST /shade HTTP
+        Accept: image/jpeg, image/png
+
+    **Example response**:
+
+    .. code-block:: rest
+
+        HTTP 200 OK
+        Content-Type: image/png
+
+        (image as bytes)
+
+    :statuscode 200: Image manipulation is functioning correctly and has completed.
+    :statuscode 404: The API functionality is currently disabled.
+    :statuscode 500: The current endpoint is currently broken due to internal errors.
+
+
+.. http:post:: /bend
+
+    This returns a curved (to 90 degrees) version of the input image.
+    If the image is larger than 512px in width or height,
+    the image will be sampled down to 512px in the
+    offending direction while preserving aspect ratio.
+
+    **Example Request**:
+
+    .. code-block:: rest
+
+        POST /bend HTTP
+        Accept: image/jpeg, image/png
+
+    **Example response**:
+
+    .. code-block:: rest
+
+        HTTP 200 OK
+        Content-Type: image/png
+
+        (image as bytes)
+
+    :statuscode 200: Image manipulation is functioning correctly and has completed.
+    :statuscode 404: The API functionality is currently disabled.
+    :statuscode 500: The current endpoint is currently broken due to internal errors.
+
+
+.. http:post:: /posterize
+
+    This returns a posterized of the input image.
+    If the image is larger than 512px in width or height,
+    the image will be sampled down to 512px in the
+    offending direction while preserving aspect ratio.
+
+    **Example Request**:
+
+    .. code-block:: rest
+
+        POST /posterize HTTP
+        Accept: image/jpeg, image/png
+
+    **Example response**:
+
+    .. code-block:: rest
+
+        HTTP 200 OK
+        Content-Type: image/png
+
+        (image as bytes)
+
+    :statuscode 200: Image manipulation is functioning correctly and has completed.
+    :statuscode 404: The API functionality is currently disabled.
+    :statuscode 500: The current endpoint is currently broken due to internal errors.
+
+
+.. http:post:: /grayscale
+
+    This returns a black and white of the input image.
+    If the image is larger than 512px in width or height,
+    the image will be sampled down to 512px in the
+    offending direction while preserving aspect ratio.
+
+    **Example Request**:
+
+    .. code-block:: rest
+
+        POST /grayscale HTTP
+        Accept: image/jpeg, image/png
+
+    **Example response**:
+
+    .. code-block:: rest
+
+        HTTP 200 OK
+        Content-Type: image/png
+
+        (image as bytes)
+
+    :statuscode 200: Image manipulation is functioning correctly and has completed.
+    :statuscode 404: The API functionality is currently disabled.
+    :statuscode 500: The current endpoint is currently broken due to internal errors.
