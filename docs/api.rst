@@ -360,7 +360,7 @@ This section outlines all of the routes used for image manipulation.
 
 .. http:post:: /blur
 
-    This returns a blurred of the input image.
+    This returns a blurred version of the input image.
     If the image is larger than 512px in width or height,
     the image will be sampled down to 512px in the
     offending direction while preserving aspect ratio.
@@ -444,7 +444,7 @@ This section outlines all of the routes used for image manipulation.
 
 .. http:post:: /shade
 
-    This returns a shaded of the input image.
+    This returns a shaded version of the input image.
     If the image is larger than 512px in width or height,
     the image will be sampled down to 512px in the
     offending direction while preserving aspect ratio.
@@ -500,7 +500,7 @@ This section outlines all of the routes used for image manipulation.
 
 .. http:post:: /posterize
 
-    This returns a posterized of the input image.
+    This returns a posterized version of the input image.
     If the image is larger than 512px in width or height,
     the image will be sampled down to 512px in the
     offending direction while preserving aspect ratio.
@@ -528,7 +528,7 @@ This section outlines all of the routes used for image manipulation.
 
 .. http:post:: /grayscale
 
-    This returns a black and white of the input image.
+    This returns a black and white version of the input image.
     If the image is larger than 512px in width or height,
     the image will be sampled down to 512px in the
     offending direction while preserving aspect ratio.
