@@ -43,13 +43,15 @@
 <dl class="get">
 <dt id="get--status">
 <code class="descname">GET </code><code class="descname">/status</code><a class="headerlink" href="#get--status" title="Permalink to this definition">¶</a></dt>
-<dd><p>This returns the API’s current status.</p>
+<dd><p>This returns the API’s current status in json.
+It returns a status code and a message.
+The information will rarely change.</p>
 <p><strong>Example Request</strong>:</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>GET /status HTTP
+<div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>GET /status HTTP
 </pre></div>
 </div>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+<div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
 Content-Type: application/json
 
 {
@@ -81,15 +83,15 @@ Content-Type: application/json
 <code class="descname">POST </code><code class="descname">/invert</code><a class="headerlink" href="#post--invert" title="Permalink to this definition">¶</a></dt>
 <dd><p>This returns an inverted version of the input image.
 If the image is larger than 512px in width or height,
-the image will be sampled down to that 512px in the
+the image will be sampled down to 512px in the
 offending direction while preserving aspect ratio.</p>
 <p><strong>Example Request</strong>:</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>POST /invert HTTP
+<div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>POST /invert HTTP
 Accept: image/jpeg, image/png
 </pre></div>
 </div>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+<div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
 Content-Type: image/png
 
 (image as bytes)
@@ -115,15 +117,15 @@ Content-Type: image/png
 <code class="descname">POST </code><code class="descname">/magic</code><a class="headerlink" href="#post--magic" title="Permalink to this definition">¶</a></dt>
 <dd><p>This returns a content aware scaled version of the input image.
 If the image is larger than 512px in width or height,
-the image will be sampled down to that 512px in the
+the image will be sampled down to 512px in the
 offending direction while preserving aspect ratio.</p>
 <p><strong>Example Request</strong>:</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>POST /magic HTTP
+<div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>POST /magic HTTP
 Accept: image/jpeg, image/png
 </pre></div>
 </div>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+<div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
 Content-Type: image/png
 
 (image as bytes)
@@ -149,15 +151,15 @@ Content-Type: image/png
 <code class="descname">POST </code><code class="descname">/deepfry</code><a class="headerlink" href="#post--deepfry" title="Permalink to this definition">¶</a></dt>
 <dd><p>This returns a deepfried version of the input image.
 If the image is larger than 512px in width or height,
-the image will be sampled down to that 512px in the
+the image will be sampled down to 512px in the
 offending direction while preserving aspect ratio.</p>
 <p><strong>Example Request</strong>:</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>POST /deepfry HTTP
+<div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>POST /deepfry HTTP
 Accept: image/jpeg, image/png
 </pre></div>
 </div>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+<div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
 Content-Type: image/png
 
 (image as bytes)
@@ -183,15 +185,15 @@ Content-Type: image/png
 <code class="descname">POST </code><code class="descname">/desat</code><a class="headerlink" href="#post--desat" title="Permalink to this definition">¶</a></dt>
 <dd><p>This returns a desaturated version of the input image.
 If the image is larger than 512px in width or height,
-the image will be sampled down to that 512px in the
+the image will be sampled down to 512px in the
 offending direction while preserving aspect ratio.</p>
 <p><strong>Example Request</strong>:</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>POST /desat HTTP
+<div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>POST /desat HTTP
 Accept: image/jpeg, image/png
 </pre></div>
 </div>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+<div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
 Content-Type: image/png
 
 (image as bytes)
@@ -217,15 +219,15 @@ Content-Type: image/png
 <code class="descname">POST </code><code class="descname">/noise</code><a class="headerlink" href="#post--noise" title="Permalink to this definition">¶</a></dt>
 <dd><p>This returns a noisy version of the input image.
 If the image is larger than 512px in width or height,
-the image will be sampled down to that 512px in the
+the image will be sampled down to 512px in the
 offending direction while preserving aspect ratio.</p>
 <p><strong>Example Request</strong>:</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>POST /noise HTTP
+<div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>POST /noise HTTP
 Accept: image/jpeg, image/png
 </pre></div>
 </div>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+<div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
 Content-Type: image/png
 
 (image as bytes)
@@ -251,17 +253,17 @@ Content-Type: image/png
 <code class="descname">POST </code><code class="descname">/color</code><a class="headerlink" href="#post--color" title="Permalink to this definition">¶</a></dt>
 <dd><p>This returns a differently colored version of the input image.
 If the image is larger than 512px in width or height,
-the image will be sampled down to that 512px in the
+the image will be sampled down to 512px in the
 offending direction while preserving aspect ratio.</p>
 <p>The color arg is parsed by wand.color.Color and can use
 any of the listed formats on <a class="reference external" href="https://imagemagick.org/script/color.php">this page</a>.</p>
 <p><strong>Example Request</strong>:</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>POST /color?color=blue HTTP
+<div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>POST /color?color=blue HTTP
 Accept: image/jpeg, image/png
 </pre></div>
 </div>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
+<div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>HTTP 200 OK
 Content-Type: image/png
 
 (image as bytes)
@@ -295,6 +297,15 @@ Content-Type: image/png
 
 
 
+<p class="blurb">Python based, meme-loving image manipulation API.</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=ir-3&repo=ZaneAPI&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
 
 
 
@@ -347,6 +358,10 @@ Content-Type: image/png
           rel="nofollow">Page source</a>
     </div>
 
+    
+    <a href="https://github.com/ir-3/ZaneAPI" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
     
 
     

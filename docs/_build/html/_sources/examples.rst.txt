@@ -32,6 +32,6 @@ Python
             # post the bytes buffer to the invert endpoint
             async with session.post("http://base_url.com/api/v0/invert", data=bytes_io) as resp:
                 # this is when you get the image data back. from here you can do whatever with it
-                # in this example we are going to save it back to test.png
+                # but in this example we are going create a new image class with it
                 with Image(blob=(await resp.read())) as output_image:
-                    output_image.save("test.png")
+                    # do something with output_image
