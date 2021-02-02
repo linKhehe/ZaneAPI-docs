@@ -5,13 +5,14 @@ The following documentation defines all of the usable routes in the Zane API.
 
 .. _auth:
 
-Authorization
--------------
+.. note::
+    Authorization
+    -------------
 
-To authorize your requests you must supply your token with one of the following methods.
+    To authorize your requests you must supply your token with one of the following methods.
 
-* A query parameter named token with your token. ``?token=your_token``
-* An ``Authorization`` header containing your token. ``Authorization: your_token``
+    * A query parameter named token with your token. ``?token=your_token``
+    * An ``Authorization`` header containing your token. ``Authorization: your_token``
 
 Image Manipulation
 ------------------
@@ -41,7 +42,7 @@ Magic
         Content-Type: image/gif
 
     :statuscode 200: Manipulation was a success.
-    ::query magnitude: the magnitude of the content aware scaling.
-    ::query token: your api-key. (see :ref:`auth`)
-    ::resheader Authorization: your api-key. (see :ref:`auth`)
+    :query magnitude: the magnitude of the content aware scaling.
+    :query token: your api-key. (see :ref:`auth`)
+    :resheader Authorization: your api-key. (see :ref:`auth`)
     
