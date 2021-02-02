@@ -6,10 +6,14 @@
 Welcome to Zane API's documentation!
 ====================================
 
-Zane API is a ram-eating, meme-loving, image-manipulating, API.
+The Zane API is a uh, wacky, image manipulation API.
+
+Warning
+
+The API is currently a W.I.P. and has breaking changes coming out very often. Not ready for production use.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
    
    api
    examples
