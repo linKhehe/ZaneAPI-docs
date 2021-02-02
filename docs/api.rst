@@ -46,5 +46,6 @@ Magic
     :query float magnitude: the magnitude of the content aware scaling. Must be between 0.1 and 2. Values outside of that range will be silently `clamped <https://en.wikipedia.org/wiki/Clamping_(graphics)>`_ into it. (optional)
     :query string token: your api-key. (optional, see :ref:`auth`)
     :resheader Authorization: your api-key. (optional, see :ref:`auth`)
+    :mimetype image/gif:
   
     
