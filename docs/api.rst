@@ -29,7 +29,7 @@ Magic
 
     .. code-block:: rest
 
-        GET /api/invert?url=https://example.com/img.png?magnitude=0.6 HTTP/2
+        GET /api/magic?url=https://example.com/img.png?magnitude=0.6 HTTP/2
         Authorization: your_token
         Host: zane.ip-bash.com
         Accept: image/jpeg, image/png, image/gif
