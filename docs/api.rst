@@ -21,7 +21,7 @@ This section outlines all of the routes used for image manipulation.
 
 Magic
 `````
-.. http:post:: /api/magic
+.. http:get:: /api/magic
 
     This returns a gif of the image being increasingly content aware scaled. Any image gets scaled to 256 x 256.
 
@@ -29,7 +29,7 @@ Magic
 
     .. code-block:: rest
 
-        GET /api/invert?url=https://via.placeholder.com/256.png HTTP/2
+        GET /api/invert?url=https://via.placeholder.com/256.png?magnitude=0.6 HTTP/2
         Authorization: your_token
         Host: zane.ip-bash.com
         Accept: image/jpeg, image/png, image/gif
@@ -42,7 +42,8 @@ Magic
         Content-Type: image/gif
 
     :statuscode 200: Manipulation was a success.
-    :query magnitude: the magnitude of the content aware scaling.
+    :query magnitude: the magnitude of the content aware scaling. Must be between 0.1 and 2. Values outside of that range will be silently `clamped<https://en.wikipedia.org/wiki/Clamping_(graphics)>`_ into it.
     :query token: your api-key. (see :ref:`auth`)
     :resheader Authorization: your api-key. (see :ref:`auth`)
+  
     
