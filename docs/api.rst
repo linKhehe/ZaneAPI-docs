@@ -43,8 +43,11 @@ Magic
 
     :statuscode 200: Manipulation was a success.
     :query url: the url of the image you want to manipulate.
+    :type url: str
     :query magnitude: the magnitude of the content aware scaling. Must be between 0.1 and 2. Values outside of that range will be silently `clamped <https://en.wikipedia.org/wiki/Clamping_(graphics)>`_ into it. (optional)
+    :type magnitude: int
     :query token: your api-key. (optional, see :ref:`auth`)
+    :type token: str
     :resheader Authorization: your api-key. (optional, see :ref:`auth`)
   
     
