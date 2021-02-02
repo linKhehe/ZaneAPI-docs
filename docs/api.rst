@@ -3,11 +3,10 @@ API Refrence
 
 The following documentation defines all of the usable routes in the Zane API.
 
-.. _auth:
+
 
 .. note::
-    Authorization
-    -------------
+    .. _auth:
 
     To authorize your requests you must supply your token with one of the following methods.
 
