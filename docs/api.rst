@@ -29,7 +29,7 @@ Magic
     .. code-block:: rest
 
         GET /api/invert?url=https://via.placeholder.com/256.png HTTP/2
-        Authorization: token
+        Authorization: your_token
         Host: zane.ip-bash.com
         Accept: image/jpeg, image/png, image/gif
 
@@ -42,6 +42,6 @@ Magic
 
     :statuscode 200: Manipulation was a success.
     :query magnitude: the magnitude of the content aware scaling.
-    :query token: your api-key. (see :ref:`auth`)
-    :resheader Authorization: your api-key. (see :ref:`auth`)
+    :query token: your api-key. (see `authorization <auth>`_)
+    :resheader Authorization: your api-key. (see `authorization <auth>`_)
     
