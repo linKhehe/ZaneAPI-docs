@@ -162,4 +162,4 @@ texinfo_documents = [
 
 # -- Theme Configuration -----------------------------------------------------
 
-html_theme = "press"
+html_theme = "material"
