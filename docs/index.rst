@@ -7,8 +7,6 @@ The Zane API is a uh, wacky, image manipulation API.
 
    The API is currently a W.I.P. and has breaking changes coming out very often. Not ready for production use.
 
-Manuals
-```````
 .. toctree::
    :maxdepth: 4
    
