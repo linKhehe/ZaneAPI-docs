@@ -162,4 +162,4 @@ texinfo_documents = [
 
 # -- Theme Configuration -----------------------------------------------------
 
-html_theme = "material"
+html_theme = "traditional"
