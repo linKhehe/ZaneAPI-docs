@@ -12,7 +12,7 @@ Manuals
 .. toctree::
    :maxdepth: 4
    
-   api
+   index
    examples
 
 If you are unable to find what you are looking for, use the following page.
