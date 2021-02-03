@@ -75,18 +75,14 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = "press"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
 html_theme_options = {
-    "github_user": "ir-3",
-    "github_repo": "ZaneAPI",
-    "github_banner": True,
-    "github_button": True,
-    "description": "Python based, meme-loving image manipulation API."
+    "external_links": [("Main Site", "https://zane.ip-bash.com/"), ("Discord", "https://discord.gg/ABWbPm3c")]
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
