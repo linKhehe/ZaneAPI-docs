@@ -69,6 +69,10 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
+html_sidebars = {
+   "**": ['localtoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html']
+}
+
 
 # -- Options for HTML output -------------------------------------------------
 
