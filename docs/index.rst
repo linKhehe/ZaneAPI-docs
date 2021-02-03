@@ -412,15 +412,15 @@ Grayscale
 Pixelate
 ````````
 
-.. http:get:: /api/invert
+.. http:get:: /api/pixelate
 
-    Negate the image.
+    Scale the image down then scale it back up. 
 
     **Example Request**:
 
     .. code-block:: rest
 
-        GET /api/invert?url=https://example.com/img.png&scale=0.3 HTTP/2
+        GET /api/pixelate?url=https://example.com/img.png&scale=0.3 HTTP/2
         Authorization: your_token
         Host: zane.ip-bash.com
         Accept: image/jpeg, image/png, image/gif
