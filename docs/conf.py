@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Zane API'
-copyright = '2019, ir-3, XuaTheGrate'
-author = 'ir-3, XuaTheGrate'
+copyright = '2021, Liam (linKhehe) H.'
+author = 'linKhehe'
 
 # The short X.Y version
 version = ''
@@ -160,4 +160,4 @@ texinfo_documents = [
 
 # -- Theme Configuration -----------------------------------------------------
 
-html_theme = 'alabaster'
+html_theme = "press"
