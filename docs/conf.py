@@ -69,7 +69,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
-html_sidebars = {'**': ['util/searchbox.html', 'util/sidetoc.html']}
+# html_sidebars = {'**': ['util/searchbox.html', 'util/sidetoc.html']}
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -77,7 +77,7 @@ html_sidebars = {'**': ['util/searchbox.html', 'util/sidetoc.html']}
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "press"
+html_theme = 'material'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
